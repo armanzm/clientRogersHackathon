@@ -9,7 +9,7 @@ const videoConstraints = {
   facingMode: "user"
 };
 
-  const MESSAGE_ENPOINT = 'https://lumbar-slicer.glitch.me';
+  const MESSAGE_ENPOINT = 'https://lumbar-slicer.glitch.me/';
 
 function App() {
   const webcamRef = React.useRef(null);
@@ -22,15 +22,14 @@ function App() {
       fetch(MESSAGE_ENPOINT, {
       method: 'POST',
       headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         message: imageSrc,
       }),
-    });
+     });
 
-    [webcamRef]
+    } ,   [webcamRef]
   );
  
   return (
