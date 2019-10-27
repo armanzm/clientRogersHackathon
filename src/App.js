@@ -3,6 +3,7 @@ import './App.css';
 import Webcam from "react-webcam";
 import React, { useState } from 'react';
 import ReactDOM from "react-dom";
+
 const videoConstraints = {
   width: 1280,
   height: 720,
